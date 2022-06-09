@@ -1,6 +1,8 @@
 <!-- The sidebar -->
 <div class="sidebar">
-  <h1>Lists</h1>
+  <h1>Lists
+    
+  </h1>
   <div class="text-lg-left text-center" *ngFor="let list of lists">
     <a [routerLink]="['/lists', list._id]" routerLinkActive="is-active">{{ list.title}}</a>
   </div>
