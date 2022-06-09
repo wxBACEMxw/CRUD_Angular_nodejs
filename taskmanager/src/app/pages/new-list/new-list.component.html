@@ -1,0 +1,15 @@
+<!--Add list modal-->
+<div class="centered-content">
+    <div class="modal-box">
+      <h1 class="title"> Create a new List</h1>
+      <div class="modal-body">
+        <input #newListInput type="text" class="form-control" placeholder="New List..." aria-label="NewList" aria-describedby="basic-addon1">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="createList(newListInput.value)">Save changes</button>
+        <button type="button" class="btn btn-secondary" routerLink="/lists">Go back</button>
+      </div>
+    </div>
+
+</div>
